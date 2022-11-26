@@ -138,17 +138,13 @@ button{
         }
         function validate() {
                 var Email = document.getElementById("email").value;
-                const password = document.getElementById("password").value;
+                const Password = document.getElementById("password").value;
                 const Repeatt = document.getElementById("repeatt").value;
-                if(Email=="" || password=="" || Repeat==""){
+                if(Email=="" || Password=="" || Repeatt==""){
                   document.getElementById("demo1").innerHTML= "Please Fill The Form To SignUp!";
                     return false;
                 }
-                 else{
-                    alert("You Have Succesfully Created An Account!");
-                    return false;
-                }
-                if(password!= Repeatt){
+                else if(Password!= Repeatt){
                   document.getElementById("demo2").innerHTML= "Password does not match!";
                     return false;
                 }
