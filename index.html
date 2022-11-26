@@ -144,7 +144,11 @@ button{
                   document.getElementById("demo1").innerHTML= "Please Fill The Form To SignUp!";
                     return false;
                 }
-                else if(password!= Repeatt){
+                 else{
+                    alert("You Have Succesfully Created An Account!");
+                    return false;
+                }
+                if(password!= Repeatt){
                   document.getElementById("demo2").innerHTML= "Password does not match!";
                     return false;
                 }
